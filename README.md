@@ -1,3 +1,5 @@
+Running the script 
+
 Script to Create the Initial Inventory File
 
 echo "[all]" > inventory
