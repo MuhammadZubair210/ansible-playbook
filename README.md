@@ -1,6 +1,6 @@
 ### Running the script 
 
-<br />
+<hr />
 
 ### Script to Create the Initial Inventory File
 
