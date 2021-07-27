@@ -1,14 +1,22 @@
-Running the script 
+### Running the script 
 
-Script to Create the Initial Inventory File
+<br />
 
+### Script to Create the Initial Inventory File
+
+``` sh
 echo "[all]" > inventory
+```
 
-Script to Query EC2 for Instances and Output to File
+### Script to Query EC2 for Instances and Output to File
 
-aws ec2 describe-instances \
+``` sh
+$ aws ec2 describe-instances \
    --query 'Reservations[*].Instances[*].PublicIpAddress' \
    --output text >> inventory
+```
+
+### Things you should know
 
 Here, we called the output file inventory. But you could call it anything at all as long as you use the same name when running your Ansible Playbook later on.
 
